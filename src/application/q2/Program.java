@@ -1,5 +1,8 @@
 package application.q2;
 
+/** Classe Program: faz uma verificação simples de uma senha padrão e valida se os requisitos necessários estão sendo atendidos. 
+ * @author Aslay Clevisson*/
+
 import java.util.Scanner;
 
 public class Program {
@@ -31,6 +34,11 @@ public class Program {
 		sc.close();
 	}
 	
+	
+	/** O método senhaForte faz toda verificação de critérios para validar uma senha
+	 * retorna falso para senha inválida ou true para senha correta.
+	 * @param String - senha solicitada
+	 * @return Boleean - valida critérios de senha */
 	public static boolean senhaForte(String senha) {
 		boolean numero = false;
 		boolean simbolo = false;
